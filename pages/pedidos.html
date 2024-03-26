@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+    <style>
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            /* Hace que la barra de navegación se mantenga fija en la parte superior */
+            width: 100%;
+            /* Se extiende por toda la anchura de la página */
+            top: 0;
+            /* Se pega al borde superior de la ventana del navegador */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#" onclick="navigateTo('usuarios')">Usuarios</a>
+        <a href="#" onclick="navigateTo('productos')">Productos</a>
+        <a href="#" onclick="navigateTo('pedidos')">Pedidos</a>
+        <a href="/">Cerrar Sesión</a>
+    </nav>
+    <div id="app"></div>
+    <script type="module" src="/scripts/pedidos.js"></script>
+    <script>
+        function navigateTo(page) {
+            window.location.href = `/pages/${page}.html`;
+        }
+    </script>
+</body>
+
+</html>
