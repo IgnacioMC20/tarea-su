@@ -4,6 +4,8 @@ document.querySelector('#app').innerHTML = `
 
 <body>
   <h2>Lista de productos</h2>
+  <br>
+  <a href="/pages/realizar-pedido.html">Crear pedido</a>
 
   <table>
     <thead>
@@ -20,7 +22,6 @@ document.querySelector('#app').innerHTML = `
     </tbody>
   </table>
 </body>
-
 `
 
 const hydrateProducts = () => {

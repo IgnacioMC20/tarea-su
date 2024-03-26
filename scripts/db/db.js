@@ -16,4 +16,3 @@ export const pedidos = [
     { id_pedido: '3', id_usuario: 'mmm', id_producto: '3', proveedor: 'Mueblería La Estrella', cantidad: 2 },
     { id_pedido: '4', id_usuario: 'mmm', id_producto: '4', proveedor: 'Muebles y Decoraciones SA de CV', cantidad: 4 }
 ];
-
